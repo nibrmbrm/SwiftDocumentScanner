@@ -7,6 +7,7 @@
 
 import CoreImage
 import Vision
+import UIKit
 
 public struct CropHelper {
 
