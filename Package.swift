@@ -13,7 +13,7 @@ let package = Package(
    ],
    dependencies: [
        // Add your dependencies here
-       .package(url: "https://github.com/nibrmbrm/CropView.git", from: "0.1.0")
+       .package(url: "https://github.com/nibrmbrm/CropView.git", from: "0.1.6")
    ],
    targets: [
        .target(
