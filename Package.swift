@@ -4,18 +4,22 @@ import PackageDescription
 let package = Package(
    name: "SwiftDocumentScanner",
    platforms: [
-       .iOS(.v10)
+       .iOS(.v13)
    ],
    products: [
        .library(
            name: "SwiftDocumentScanner",
            targets: ["SwiftDocumentScanner"]),
    ],
+   dependencies: [
+       // Add your dependencies here
+       .package(url: " https://github.com/rzmn/CropView", from: "1.0.0")
+   ],
    targets: [
        .target(
            name: "SwiftDocumentScanner",
-           dependencies: [],
-           path: "Sources/SwiftDocumentScanner",  // Adjust the path to the source files
+           dependencies: ["CropView"],
+           path: "Sources/SwiftDocumentScanner",
            resources: [
                .process("Assets")
            ]),
